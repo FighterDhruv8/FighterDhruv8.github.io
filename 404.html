@@ -1,101 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <style>
-    :root {
-        --primary: #2563eb;
-        --primary-dark: #1d4ed8;
-        --secondary: #f8fafc;
-        --accent: #10b981;
-        --text: #1e293b;
-        --text-light: #64748b;
-        --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: var(--bg-gradient);
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        text-align: center;
-    }
-
-    .error-container {
-        max-width: 600px;
-        padding: 2rem;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-        animation: fadeIn 1s ease;
-    }
-
-    .error-container h1 {
-        font-size: 6rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-    }
-
-    .error-container p {
-        font-size: 1.3rem;
-        margin-bottom: 2rem;
-        color: rgba(255, 255, 255, 0.9);
-    }
-
-    .btn {
-        padding: 0.8rem 2rem;
-        border-radius: 50px;
-        text-decoration: none;
-        font-weight: 600;
-        background: white;
-        color: var(--primary);
-        transition: all 0.3s ease;
-        display: inline-block;
-    }
-
-    .btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    }
-
-    @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    }
-
-    .icon {
-        font-size: 4rem;
-        margin-bottom: 1rem;
-        color: white;
-    }
-    </style>
-    </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F4F6F3">
+<title>Page not found – Dhruv Kuchhal</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2317211D'/%3E%3Ctext x='16' y='23' font-size='19' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23FFE45C'%3ED%3C/text%3E%3C/svg%3E">
+<script>
+try{var t=localStorage.getItem('dk-portfolio-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+<style>
+:root{
+  --bg:#F4F6F3; --ink:#17211D; --muted:#56625D; --line:#D5DBD6; --link:#1F4FD8; --hit:#FFE45C; --hit-ink:#17211D; --panel:#E9EEEA;
+  --display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --body:'Instrument Sans','Segoe UI',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#101614;--ink:#E8EEEA;--muted:#98A59E;--line:#27322D;--link:#9DB2FF;--panel:#18211D}
+}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#101614;--ink:#E8EEEA;--muted:#98A59E;--line:#27322D;--link:#9DB2FF;--panel:#18211D}
+:root[data-theme="light"]{color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-underline-offset:.2em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--link);outline-offset:3px;border-radius:3px}
+.wrap{width:100%;max-width:60rem;margin:0 auto;padding:0 1.5rem}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:3.5rem}
+.brand{font:700 1.05rem var(--display);color:var(--ink);text-decoration:none;padding:.6rem 0}
+.theme-btn{display:inline-flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;margin-right:-.8rem;border:0;background:transparent;color:var(--muted);border-radius:8px;cursor:pointer}
+.theme-btn:hover{color:var(--ink)}
+.theme-btn svg{display:none;width:1.15rem;height:1.15rem;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.theme-btn[data-mode="system"] .i-system,.theme-btn[data-mode="light"] .i-light,.theme-btn[data-mode="dark"] .i-dark{display:block}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+::view-transition-old(root),::view-transition-new(root){animation-duration:.3s;animation-timing-function:ease}
+main{flex:1;display:flex;align-items:center;padding:3rem 0}
+h1{font:700 clamp(4.5rem,18vw,9rem)/.95 var(--display);letter-spacing:-.04em;margin-bottom:1.5rem}
+h1 .num{background:var(--hit);color:var(--hit-ink);padding:0 .08em;border-radius:.08em}
+.lede{font:500 clamp(1.3rem,3.2vw,1.75rem)/1.3 var(--display);margin-bottom:1.5rem;max-width:30rem}
+.query{display:flex;align-items:center;gap:.75rem;max-width:36rem;border:2px solid var(--ink);border-radius:10px;padding:.75rem .9rem;font:400 .95rem var(--mono);margin-bottom:.5rem}
+.query code{font:inherit;overflow-wrap:anywhere}
+.count{color:var(--muted);font-size:.9rem;margin-bottom:2rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:1.75rem}
+.btn{display:inline-block;font-weight:600;text-decoration:none;padding:.75rem 1.4rem;border-radius:8px;border:2px solid var(--ink);background:var(--ink);color:var(--bg)}
+.btn:hover{background:var(--hit);color:var(--hit-ink);border-color:var(--hit)}
+.jump{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
+.jump p{color:var(--muted);font-size:.95rem;margin-right:.25rem}
+.jump ul{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none}
+.jump a{display:inline-flex;align-items:center;min-height:2.75rem;padding:0 1.1rem;font-weight:500;font-size:.95rem;color:var(--ink);text-decoration:none;background:var(--panel);border:1px solid var(--line);border-radius:999px}
+.jump a:hover{border-color:var(--ink)}
+footer{padding:1.5rem 0 2rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+</style>
+</head>
 <body>
-    <div class="error-container">
-    <div class="icon"><i class="fas fa-exclamation-triangle"></i></div>
-    <h1>404</h1>
-    <p>Oops! The page you're looking for doesn't exist.</p>
-    <a href="/" class="btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+<header>
+  <div class="wrap">
+    <a class="brand" href="/">Dhruv Kuchhal</a>
+    <button type="button" class="theme-btn" id="theme-btn" data-mode="system" aria-label="Theme: System. Switch to Light.">
+      <svg class="i-system" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+      <svg class="i-light" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="i-dark" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <span class="sr-only" id="theme-status" role="status"></span>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <h1><span class="num">404</span><span class="sr-only"> – Page not found</span></h1>
+    <p class="lede">That page doesn’t exist, or it has moved.</p>
+    <div class="query" aria-hidden="true"><code id="path">/</code></div>
+    <p class="count" id="count">0 results for this address</p>
+    <div class="btns">
+      <a class="btn" href="/">Back to home</a>
     </div>
+    <nav class="jump" aria-labelledby="jump-title">
+      <p id="jump-title">Or jump to</p>
+      <ul>
+        <li><a href="/#experience">Experience</a></li>
+        <li><a href="/#projects">Projects</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</main>
+
+<footer><div class="wrap">© <span id="yr">2026</span> Dhruv Kuchhal</div></footer>
+
+<script>
+(function(){
+  var p=location.pathname+location.search;
+  document.getElementById('path').textContent=p;
+  document.getElementById('count').textContent='0 results for '+p;
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  /* Theme: system (default) / light / dark, shared with the main site */
+  var KEY='dk-portfolio-theme',root=document.documentElement,
+      btn=document.getElementById('theme-btn'),status=document.getElementById('theme-status'),
+      meta=document.querySelector('meta[name="theme-color"]'),
+      mq=window.matchMedia('(prefers-color-scheme: dark)'),
+      reduce=window.matchMedia('(prefers-reduced-motion: reduce)'),
+      names={system:'System',light:'Light',dark:'Dark'};
+  function saved(){try{var v=localStorage.getItem(KEY);return v==='light'||v==='dark'?v:'system';}catch(e){return 'system';}}
+  function syncMeta(){if(meta)meta.setAttribute('content',getComputedStyle(root).getPropertyValue('--bg').trim());}
+  function setMode(mode,persist){
+    if(mode==='system')root.removeAttribute('data-theme');else root.setAttribute('data-theme',mode);
+    var next=mode==='system'?'light':mode==='light'?'dark':'system';
+    btn.setAttribute('data-mode',mode);
+    btn.setAttribute('aria-label','Theme: '+names[mode]+'. Switch to '+names[next]+'.');
+    btn.title=btn.getAttribute('aria-label');
+    if(persist){try{if(mode==='system')localStorage.removeItem(KEY);else localStorage.setItem(KEY,mode);}catch(e){}}
+    syncMeta();
+  }
+  btn.addEventListener('click',function(){
+    var cur=btn.getAttribute('data-mode'),mode=cur==='system'?'light':cur==='light'?'dark':'system';
+    function apply(){setMode(mode,true);}
+    if(document.startViewTransition&&!reduce.matches)document.startViewTransition(apply);else apply();
+    status.textContent='Theme set to '+mode+'.';
+  });
+  if(mq.addEventListener)mq.addEventListener('change',syncMeta);
+  setMode(saved(),false);
+})();
+</script>
 </body>
 </html>
